@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: yellow; /* Set background to yellow */
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(3, 115, 127); /* Set nav background to a teal color */
+    border: 5px solid green; /* Thicker solid green border */
+    padding: 10px; /* Space within nav */
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    margin-bottom: 400px; /* Decrease space below the nav */
+    height: 60px; /* Set a fixed height for the nav */
+}
+
+nav a {
+    margin: 0 80px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+    font-weight: 600; /* Bold links */
+    position: relative; /* For absolute positioning of circle markers */
+}
+
+nav a:hover {
+    color: rgb(255, 0, 204); /* Changes color to pink on hover */
+}
+
+/* Circle marker */
+nav a::after {
+    content: '';
+    display: none; /* Initially hide the marker */
+    position: absolute;
+    left: -10px; /* Adjust position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align center */
+    width: 10px; /* Circle diameter */
+    height: 10px; /* Circle diameter */
+    background-color: red; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+}
+
+#page2:hover::after,
+#page3:hover::after {
+    display: block; /* Show circle on hover for Page 2 and Page 3 */
+}
+
+h1 {
+    display: inline-block;
+    line-height: 1.5;
+    white-space: nowrap; /* Keeps words on the same line */
+    margin-top: 20px; /* Add space above the heading */
+}
+
+/* General hover effect for smooth transitions */
+h1 span {
+    display: inline-block;
+    transition: transform 0.5s ease, color 0.5s ease, font-size 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Hover effects for each span */
+#you {
+    font-size: 50px;
+}
+
+#you:hover {
+    font-size: 100px; /* Gets bigger */
+    font-weight: bold;
+}
+
+#can {
+    font-size: 50px;
+}
+
+#can:hover {
+    color: orange; 
+    font-weight: bold; /* Changes color to orange */
+}
+
+#count {
+    font-size: 50px;
+}
+
+#count:hover {
+    font-size: 100px; /* Gets bigger */
+}
+
+#like {
+    font-size: 50px;
+}
+
+#like:hover {
+    font-size: 100px; /* Gets bigger */
+}
+
+#on {
+    font-size: 50px;
+}
+
+#on:hover {
+    font-size: 100px; /* Gets bigger */
+}
+
+#me {
+    font-size: 50px;
+}
+
+#me:hover {
+    font-size: 100px; /* Gets bigger */
+}
+
+/* Hover effects for 'One', 'Two', 'Three' */
+#one, #two, #three {
+    font-size: 50px;
+    transition: font-size 0.5s ease, text-shadow 0.5s ease, text-transform 0.5s ease;
+}
+
+#one:hover, #two:hover, #three:hover {
+    text-transform: uppercase; /* Turns into all caps */
+    text-shadow: 0 0 10px blue; /* Glows */
+    font-size: 80px; /* Gets bigger */
+}
+
+/* Hover effect for 'I'll be there' */
+#ill-be-there {
+    font-size: 50px;
+}
+
+#ill-be-there:hover {
+    font-size: 100px; /* Gets 2 times bigger */
+}
+
+/* Hover effect for 'And I know when I need it' */
+#know-when {
+    font-size: 50px;
+}
+
+#know-when:hover {
+    font-size: 30px; /* Gets smaller when hovered */
+}
+
+/* Hover effect for 'I can' with letter sizes */
+#i-can {
+    font-size: 50px; /* Set base size for the entire span */
+}
+
+#i-can:hover .c {
+    font-size: 70px;
+}
+
+#i-can:hover .o {
+    font-size: 60px;
+}
+
+#i-can:hover .u {
+    font-size: 65px;
+}
+
+#i-can:hover .n {
+    font-size: 55px;
+}
+
+#i-can:hover .t {
+    font-size: 50px;
+}
+
+/* Hover effect for 'On you' */
+#on-you {
+    font-size: 50px;
+}
+
+#on-you:hover {
+    font-size: 80px; /* Gets bigger */
+    color: red; /* Changes color */
+}
+
+/* Hover effect for 'Four', 'Three-second', 'Two-second' */
+#four, #three-second, #two-second {
+    font-size: 50px;
+    transition: font-size 0.5s ease, text-shadow 0.5s ease, text-transform 0.5s ease;
+}
+
+#four:hover, #three-second:hover, #two-second:hover {
+    text-transform: uppercase; /* Turns into all caps */
+    text-shadow: 0 0 10px blue; /* Glows */
+    font-size: 80px; /* Gets bigger */
+}
+
+
+
+
+
+
+
