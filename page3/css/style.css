@@ -1,109 +1,79 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    background-color: yellow; /* Set background to yellow */
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Emilys Candy', cursive;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ed4264, #ffedbc );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
     text-align: center;
 }
 
-nav {
-    width: 100%;
-    background-color: rgb(3, 115, 127); /* Set nav background to teal */
-    border: 5px solid green; /* Thicker solid green border */
-    padding: 10px; /* Space within nav */
-    display: flex;
-    justify-content: center; /* Center links horizontally */
-    margin-bottom: 40px; /* Space below the nav */
+.line {
+    margin: 1rem 0;
 }
 
-nav a {
-    margin: 0 15px; /* Space between links */
-    text-decoration: none; /* Remove underline */
-    color: black; /* Link color */
-    font-weight: 600; /* Bold links */
-}
-
-nav a:hover {
-    color: rgb(255, 0, 204); /* Changes color to pink on hover */
-}
-
-/* General hover effect for smooth transitions */
-.hover-effect {
+.lyric {
     display: inline-block;
-    transition: transform 0.5s ease, color 0.5s ease, font-size 0.5s ease, text-shadow 0.5s ease;
+    font-size: 100px; 
+    margin: 0 20px; /* Increased horizontal margin for more spacing */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Specific hover effects for each span */
-.if-you-tossin:hover {
-    font-size: 60px; /* Gets bigger */
+/* Hover Effects for Various Words */
+.hover-disappear:hover {
+    opacity: 0; /* Disappears on hover */
+    transition: opacity 0.4s ease; /* Smooth transition */
 }
 
-.and-youre:hover {
-    font-size: 60px; /* Gets bigger */
+.last-lyric {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
 }
 
-.turning:hover {
-    transform: rotate(15deg); /* Spins */
+.last-lyric:hover {
+    animation: bounce 0.5s infinite; /* Bounce effect */
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #8f0291; /* Glow effect */
+    color: #00aeed;
 }
 
-.and-you-just:hover {
-    font-size: 60px; /* Gets bigger */
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
-.cant:hover {
-    color: red; /* Turns red */
-    font-size: 40px; /* Gets smaller */
-}
 
-.fall-asleep:hover {
-    transform: translateY(10px); /* Moves down */
-}
 
-.ill-sing:hover {
-    font-size: 60px; /* Gets bigger */
-    text-shadow: 0 0 10px yellow; /* Glows */
-}
 
-.a-song:hover {
-    animation: shake 0.5s; /* Shake animation */
-}
 
-.beside-you:hover {
-    letter-spacing: -1px; /* Closer together */
-}
 
-.and-if-you-ever:hover {
-    font-size: 60px; /* Gets bigger */
-}
 
-.really:hover {
-    color: red; /* Turns red */
-    text-transform: uppercase; /* All caps */
-}
 
-.mean-to-me:hover {
-    font-size: 60px; /* Gets bigger */
-}
 
-.every-day-i-will:hover {
-    font-size: 60px; /* Gets bigger */
-    text-shadow: 0 0 10px yellow; /* Glows */
-}
 
-/* Keyframes for shake animation */
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    25% { transform: translate(-1px, -2px) rotate(-1deg); }
-    50% { transform: translate(1px, 2px) rotate(1deg); }
-    75% { transform: translate(-1px, 1px) rotate(0deg); }
-    100% { transform: translate(0px, 0px) rotate(0deg); }
-}
+
+
+
+
+
+

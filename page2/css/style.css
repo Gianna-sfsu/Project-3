@@ -1,94 +1,191 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    background-color: yellow; /* Set background to yellow */
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Emilys Candy', cursive;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ed4264, #ffedbc );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
     text-align: center;
 }
 
-nav {
-    width: 100%;
-    background-color: rgb(3, 115, 127); /* Set nav background to a teal color */
-    border: 5px solid green; /* Thicker solid green border */
-    padding: 10px; /* Space within nav */
-    display: flex;
-    justify-content: center; /* Center links horizontally */
-    margin-bottom: 40px; /* Decrease space below the nav */
-    height: 60px; /* Set a fixed height for the nav */
+.line {
+    margin: 1rem 0;
 }
 
-nav a {
-    margin: 0 80px; /* Space between links */
-    text-decoration: none; /* Remove underline */
-    color: black; /* Link color */
-    font-weight: 600; /* Bold links */
-    position: relative; /* For absolute positioning of circle markers */
-}
-
-nav a:hover {
-    color: rgb(255, 0, 204); /* Changes color to pink on hover */
-}
-
-h1 {
-    text-align: center; /* Center the text */
-}
-
-/* General hover effect for smooth transitions */
-h1 span {
+.lyric {
     display: inline-block;
-    transition: transform 0.5s ease, color 0.5s ease, text-shadow 0.5s ease;
+    font-size: 100px; 
+    margin: 0 20px; /* Increased horizontal margin for more spacing */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effects */
-#youll-be-there:hover {
-    font-size: 60px; /* Gets larger when hovered */
+/* Hover Effects for Various Words */
+
+.hover-duplicate:hover {
+    content: attr(data-content); /* Duplicates the text */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-#cause:hover {
-    font-size: 60px; /* Gets larger when hovered */
+/* Glow and Size Increase for 'need it' */
+.glow:hover {
+    font-size: 120px; /* Increase size on hover */
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33b8ff; /* Glow effect */
+    transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
-#friends {
-    transition: text-shadow 0.5s ease; /* For glow effect */
+/* Count to be Uppercase on Hover */
+.hover-uppercase:hover {
+    text-transform: uppercase; /* Make text uppercase */
+    transition: text-transform 0.3s ease; /* Smooth transition */
 }
 
-#friends:hover {
-    font-size: 60px; /* Gets larger when hovered */
-    text-shadow: 0 0 10px blue; /* Glows */
+/* Glow and Size Increase for 'on you' */
+.hover-glow-bounce:hover {
+    font-size: 120px; /* Increase size on hover */
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #338bff; /* Glow effect */
+    transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
-#are-supposed:hover {
-    font-size: 20px; /* Gets really small when hovered */
+/* New spinning effect */
+.lyric:hover:not(.no-spin) {
+    transform: rotate(360deg); /* Spins the element */
+    transition: transform 0.5s ease; /* Duration of the spin */
 }
 
-#ooh1:hover {
-    color: orange; /* Changes color when hovered */
-    text-shadow: 0 0 10px blue; /* Glows */
+/* Hover effects for other pages as required */
+.hover-glow-bounce {
+    transition: all 0.3s ease; /* General glow effect */
 }
 
-#ooh2:hover {
-    color: purple; /* Changes color when hovered */
-    text-shadow: 0 0 10px green; /* Glows */
+.hover-blur:hover {
+    filter: blur(5px); /* Blurs the text */
+    transition: filter 0.3s ease; /* Smooth transition */
 }
 
-#yeah:hover {
-    color: red; /* Changes color when hovered */
-    font-size: 60px; /* Gets bigger when hovered */
+.hover-turn-glow:hover {
+    transform: rotate(15deg); /* Rotate effect */
+    text-shadow: 0 0 15px #ffeb3b; /* Glow effect */
+    transition: transform 0.5s ease; /* Smooth transition */
 }
 
-#yeah2:hover {
-    color: red; /* Changes color when hovered */
-    font-size: 60px; /* Gets bigger when hovered */
+.hover-side-move:hover {
+    transform: translateX(10px); /* Side movement */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
+
+.hover-friends:hover {
+    content: attr(data-content); /* Duplicate the word */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Last line and link styles */
+.last-lyric {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.last-lyric:hover {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
+    color: #ed7300;
+}
+
+.last-line {
+    margin-top: 2px;
+}
+
+/* Specific hover effects for words in various pages */
+.hover-glow {
+    transition: text-shadow 0.3s ease; /* Smooth glow effect */
+}
+
+.hover-glow:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #e766fb; /* Glow effect */
+}
+
+.hover-spin {
+    transition: transform 0.5s ease; /* Smooth transition for spinning */
+}
+
+.hover-spin:hover {
+    transform: rotate(360deg); /* Spin effect */
+}
+
+.hover-disappear:hover {
+    opacity: 0; /* Disappears on hover */
+    transition: opacity 0.4s ease; /* Smooth transition */
+}
+
+.hover-blur {
+    transition: filter 0.3s ease; /* Smooth transition for blur */
+}
+
+.hover-blur:hover {
+    filter: blur(5px); /* Blur effect */
+}
+
+.hover-bounce {
+    transition: transform 0.3s ease; /* Smooth transition for bounce */
+}
+
+.hover-bounce:hover {
+    transform: translateY(-10px); /* Bounce effect */
+}
+
+/* Glow effect with increase for other text */
+.glow-oh-yeah:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33ebff; /* Glow effect */
+    transition: text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.hover-glow-bounce:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33e0ff; /* Glow effect */
+}
+
+/* Adjust font sizes for specific pages */
+.emilys {
+    font-family: 'Emilys Candy', cursive; /* Specific font style */
+    font-size: 120px; /* Adjusted size */
+}
+
+.swanky {
+    font-family: 'Fontdiner Swanky', cursive; /* Specific font style */
+    font-size: 120px; /* Adjusted size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

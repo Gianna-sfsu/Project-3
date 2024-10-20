@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Emilys Candy', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ed4264, #ffedbc );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+.lyric {
+    display: inline-block;
+    font-size: 100px;
+    margin: 0 10px;
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+/* No spin effect */
+.no-spin:hover {
+    transform: none;
+}
+
+/* Ghost effect for "always" */
+.hover-ghost:hover::after {
+    content: "always";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    transform: translateX(10px);
+    opacity: 0;
+    animation: ghostAppear 0.5s ease forwards;
+}
+
+/* Ghost appearance animation */
+@keyframes ghostAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Glow effect for "shoulder" */
+.hover-glow:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733;
+    transition: text-shadow 0.3s ease;
+}
+
+/* Blur and glow effect for "cry" */
+.hover-blur-glow:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733;
+    filter: blur(2px);
+    transition: text-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* No underline for links */
+.no-underline {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

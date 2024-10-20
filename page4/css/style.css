@@ -1,0 +1,190 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Emilys Candy', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ed4264, #ffedbc );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+.lyric {
+    display: inline-block;
+    font-size: 100px; 
+    margin: 0 20px; /* Increased horizontal margin for more spacing */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.lyric:hover:not(.no-spin) {
+    transform: rotate(360deg); /* Spins the element */
+    transition: transform 0.5s ease; /* Duration of the spin */
+}
+
+/* Glow effects */
+.glow {
+    transition: text-shadow 0.3s ease;
+}
+
+.glow:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
+    color: #ed7300; /* Change the color on glow */
+}
+
+/* New effects */
+.hover-disappear {
+    transition: opacity 0.4s ease;
+}
+
+.hover-disappear:hover {
+    opacity: 0; /* Fades out on hover */
+}
+
+.hover-duplicate {
+    transition: transform 0.3s ease;
+}
+
+.hover-duplicate:hover {
+    transform: scale(1.2); /* Slightly increases size on hover */
+    color: #ed7300; /* Optional color change on hover */
+}
+
+/* Glow and grow effects */
+.hover-uppercase-glow {
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-uppercase-glow:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b;
+    transform: scale(1.5); /* Scale up on hover */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+/* Blur effects */
+.hover-blur {
+    transition: filter 0.3s ease; /* Smooth transition for the blur */
+}
+
+.hover-blur:hover {
+    filter: blur(5px); /* Apply blur on hover */
+}
+
+/* Bounce effects */
+.bounce {
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Last lyric effects */
+.last-lyric {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.last-lyric:hover {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
+    color: #ed7300;
+}
+
+.no-underline {
+    text-decoration: none; /* Remove underline */
+}
+
+.hover-glow-bounce {
+    animation: bounce 1s infinite alternate;
+    transition: text-shadow 0.3s ease;
+}
+
+.hover-glow-bounce:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b;
+}
+
+.hover-side-move {
+    transition: transform 0.3s ease;
+}
+
+.hover-side-move:hover {
+    transform: translateX(10px); /* Moves the text on hover */
+}
+
+.hover-turn-glow {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-turn-glow:hover {
+    transform: rotateY(180deg); /* Flips the element */
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b;
+}
+
+.hover-glow-oh-yeah {
+    transition: text-shadow 0.3s ease;
+}
+
+.hover-glow-oh-yeah:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b;
+    color: #ed7300; /* Optional color change */
+}
+
+/* Custom styles for different font families */
+.emilys {
+    font-family: 'Emilys Candy', cursive;
+    font-size: 120px;
+}
+
+.swanky {
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 120px;
+}
+
+/* Final adjustments */
+.last-line {
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

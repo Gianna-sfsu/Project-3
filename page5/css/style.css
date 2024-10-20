@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Emilys Candy', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ed4264, #ffedbc );
+    background-size: 200% 200%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+.lyric {
+    display: inline-block;
+    font-size: 100px; 
+    margin: 0 20px; /* Increased horizontal margin for more spacing */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* New spinning effect */
+.lyric:hover:not(.no-spin) {
+    transform: rotate(360deg); /* Spins the element */
+    transition: transform 0.5s ease; /* Duration of the spin */
+}
+
+.emilys {
+    font-family: 'Emilys Candy', regular;
+    font-size: 120px;
+}
+
+.swanky {
+    font-family: 'Fontdiner Swanky', regular;
+    font-size: 120px;
+}
+
+.hover-disappear:hover {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.last-lyric {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.last-lyric:hover {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
+    color: #ed7300;
+}
+
+.last-line {
+    margin-top: 2px;
+}
+
+/* Hover Effects for Specific Words */
+
+/* Page 2 */
+.hover-glow-bounce:hover {
+    font-size: 120px; /* Increase size on hover */
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+    animation: bounce 0.5s infinite alternate; /* Bouncing effect */
+}
+
+/* Page 3 */
+.glow-friends:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+    animation: bounce 0.5s infinite alternate; /* Bouncing effect */
+}
+
+.glow-oh-yeah:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+}
+
+.bounce:hover {
+    animation: bounce 0.5s infinite alternate; /* Bouncing effect */
+}
+
+.hover-glow-bounce.hover-duplicate:hover {
+    content: attr(data-text) attr(data-text); /* Duplicate the text */
+}
+
+/* Page 4 */
+.hover-turn-glow:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+}
+
+.hover-side-move:hover {
+    transform: translateX(10px); /* Side move effect */
+}
+
+.hover-blur:hover {
+    filter: blur(4px); /* Blur effect */
+}
+
+/* Page 5 */
+.hover-disappear:hover {
+    opacity: 0; /* Makes the element disappear */
+    transition: opacity 0.4s ease; /* Smooth transition */
+}
+
+.hover-ooh:hover {
+    font-size: 120px; /* Increase size on hover */
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+    animation: bounce 0.5s infinite alternate; /* Bouncing effect */
+}
+
+.hover-yeah:hover {
+    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #ff5733; /* Glow effect */
+    text-transform: uppercase; /* Transform to uppercase */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* No Spin Class */
+.no-spin:hover {
+    transform: none; /* Disable any spin effect on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
