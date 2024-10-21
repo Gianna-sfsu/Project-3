@@ -47,7 +47,7 @@ body {
 }
 
 .glow:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #35077a, 0 0 40px #cb3bff;
     color: #ed7300; /* Change the color on glow */
 }
 
