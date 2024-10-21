@@ -48,7 +48,7 @@ body {
 
 .last-lyric:hover {
     animation: bounce 0.5s infinite; /* Bounce effect */
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #8f0291; /* Glow effect */
+    text-shadow: 0 0 15px #e1ce22, 0 0 30px #8f0291; /* Glow effect */
     color: #00aeed;
 }
 
