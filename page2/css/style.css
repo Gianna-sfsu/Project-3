@@ -22,152 +22,47 @@ body {
     text-align: center;
 }
 
-.line {
-    margin: 1rem 0;
-}
+
 
 .lyric {
     display: inline-block;
     font-size: 100px; 
-    margin: 0 20px; /* Increased horizontal margin for more spacing */
+    margin: 0 20px; 
     color: #fff;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
-/* Hover Effects for Various Words */
-
-.hover-duplicate:hover {
-    content: attr(data-content); /* Duplicates the text */
-    transition: all 0.3s ease; /* Smooth transition */
+.emilys {
+    font-family: 'Emilys Candy', regular;
+    font-size: 120px;
 }
 
-/* Glow and Size Increase for 'need it' */
-.glow:hover {
-    font-size: 120px; /* Increase size on hover */
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33b8ff; /* Glow effect */
-    transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+.swanky {
+    font-family: 'Fontdiner Swanky', regular;
+    font-size: 120px;
 }
 
-/* Count to be Uppercase on Hover */
 .hover-uppercase:hover {
-    text-transform: uppercase; /* Make text uppercase */
-    transition: text-transform 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; 
+    transition: text-transform 0.3s ease; /
 }
 
-/* Glow and Size Increase for 'on you' */
-.hover-glow-bounce:hover {
-    font-size: 120px; /* Increase size on hover */
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #338bff; /* Glow effect */
-    transition: font-size 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-}
 
-/* New spinning effect */
-.lyric:hover:not(.no-spin) {
-    transform: rotate(360deg); /* Spins the element */
-    transition: transform 0.5s ease; /* Duration of the spin */
-}
 
-/* Hover effects for other pages as required */
-.hover-glow-bounce {
-    transition: all 0.3s ease; /* General glow effect */
-}
-
-.hover-blur:hover {
-    filter: blur(5px); /* Blurs the text */
-    transition: filter 0.3s ease; /* Smooth transition */
-}
-
-.hover-turn-glow:hover {
-    transform: rotate(15deg); /* Rotate effect */
-    text-shadow: 0 0 15px #67c1fd; /* Glow effect */
-    transition: transform 0.5s ease; /* Smooth transition */
-}
-
-.hover-side-move:hover {
-    transform: translateX(10px); /* Side movement */
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-
-.hover-friends:hover {
-    content: attr(data-content); /* Duplicate the word */
-    transition: all 0.3s ease; /* Smooth transition */
-}
-
-/* Last line and link styles */
 .last-lyric {
     color: #fff;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     transition: transform 0.5s ease, text-shadow 0.5s ease;
 }
 
 .last-lyric:hover {
     transform: scale(1.5);
-    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #893bff, 0 0 40px #cb3bff;
-    color: #ed7300;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b, 0 0 30px #ffa03b, 0 0 40px #f37c05;
+    color: #c20aeb;
 }
 
-.last-line {
-    margin-top: 2px;
-}
 
-/* Specific hover effects for words in various pages */
-.hover-glow {
-    transition: text-shadow 0.3s ease; /* Smooth glow effect */
-}
 
-.hover-glow:hover {
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #e766fb; /* Glow effect */
-}
 
-.hover-spin {
-    transition: transform 0.5s ease; /* Smooth transition for spinning */
-}
-
-.hover-spin:hover {
-    transform: rotate(360deg); /* Spin effect */
-}
-
-.hover-disappear:hover {
-    opacity: 0; /* Disappears on hover */
-    transition: opacity 0.4s ease; /* Smooth transition */
-}
-
-.hover-blur {
-    transition: filter 0.3s ease; /* Smooth transition for blur */
-}
-
-.hover-blur:hover {
-    filter: blur(5px); /* Blur effect */
-}
-
-.hover-bounce {
-    transition: transform 0.3s ease; /* Smooth transition for bounce */
-}
-
-.hover-bounce:hover {
-    transform: translateY(-10px); /* Bounce effect */
-}
-
-/* Glow effect with increase for other text */
-.glow-oh-yeah:hover {
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33ebff; /* Glow effect */
-    transition: text-shadow 0.3s ease; /* Smooth transition */
-}
-
-.hover-glow-bounce:hover {
-    text-shadow: 0 0 15px #ffeb3b, 0 0 30px #33e0ff; /* Glow effect */
-}
-
-/* Adjust font sizes for specific pages */
-.emilys {
-    font-family: 'Emilys Candy', cursive; /* Specific font style */
-    font-size: 120px; /* Adjusted size */
-}
-
-.swanky {
-    font-family: 'Fontdiner Swanky', cursive; /* Specific font style */
-    font-size: 120px; /* Adjusted size */
-}
 
 
 

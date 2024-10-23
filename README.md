@@ -1,18 +1,40 @@
 # Project-3
 # title: Count On Me 
 
-# project overview 
+# Project Overview
 
-The concept of community is deeply personal to me, and the words I've chosen reflect that bond. My connection to the idea of community is built on trust, care, and unwavering support for one another—qualities that I see reflected in everyday life, especially through the small yet meaningful moments.
+This project is about community and how it’s built on trust, kindness, and being there for one another. The song "Count on Me" by Bruno Mars inspired me because it’s a great reminder of these values. My little brother is learning this song in school, and it's been so heartwarming to watch him sing about sticking together. It shows how kids learn early about helping others, and it reminds me how important community is in everyday life.
 
-The choice of "Count on Me" by Bruno Mars as an inspiration speaks directly to my values around community. This song is not only a nostalgic reminder of childhood innocence, but it also embodies the core principles of kindness, loyalty, and togetherness. Watching my little brother learn this song in school has been a heartwarming experience. It’s a beautiful illustration of how the seeds of community are planted early on, teaching kids that real strength comes from supporting one another. When they sing about sticking together, I can’t help but think of the greater picture of community in adulthood.
+I want this project to capture that feeling of support and belonging, where people know they can count on each other.
 
-For me, community is about more than just being present; it’s about showing up with intention, being a reliable figure for others. Whether it’s family, friends, or even broader networks, the sense of belonging and mutual reliance is key. I want this project to capture that same energy—the comfort in knowing that you can count on others, and they can count on you in return. The words and themes I’ve chosen mirror this belief, and I hope they inspire others to see the value in being part of something larger, built on the foundation of kindness and care.
+# Technical Overview
 
-In this professional context, it’s about making sure that everything we build—whether through branding, messaging, or outreach—reinforces that commitment to creating a space where people feel they belong, and where trust is the glue holding us all together.
+This project uses HTML, CSS, and a bit of JavaScript to create a fun and interactive website.
 
+- **HTML** is used for the structure of the pages.
+- **CSS** is used for styling, like changing the fonts and adding animations.
+- The site includes **bounce and glow animations** to make the lyrics stand out when you hover over them.
+- **Google Fonts** are used to give the text a playful and fun look.
 
-# technical overview
+# Animations:
 
-# acknowledgment
- Bruno Mars
+The animations, like the bouncing and glowing text, were made using **CSS**.
+
+- The **bounce effect** happens when you hover over the "Ooh-ooh-ooh" text. I learned how to do this using a guide from **MDN Web Docs**.
+  
+- The **glow effect** was made using **text-shadow** in CSS. I got the idea from a tutorial on **CSS-Tricks** that shows how to make glowing text.
+
+#### Sources:
+- **MDN Web Docs - CSS Keyframes:** Helped me understand how to create the bounce effect.
+  - [MDN Web Docs - CSS Keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+  
+- **CSS-Tricks - Glowing Text Effect:** Showed me how to add the glowing effect.
+  - [CSS-Tricks - Glowing Text](https://css-tricks.com/almanac/properties/t/text-shadow/)
+
+## Acknowledgments
+
+Thanks to Bruno Mars for the inspiring song "Count on Me" and to my little brother, who made me realize how important these messages are.
+
+### Additional Sources:
+- Fonts: Google Fonts (https://fonts.google.com/)
+- Song Credit: "Count on Me" by Bruno Mars
